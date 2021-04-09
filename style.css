@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+    
+}
+
+div#page {
+    width: ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section aside"
+    "footer footer"
+    ;
+    grid-template-columns: auto 200px;
+    grid-template-rows: 100px 40px auto 100px; 
+}
+
+header{
+    background-color: #ffc0cb;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+header img{
+    height: 100%;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+nav a{
+    background-color: #ff0000;
+    border: 1px solid indianred;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+nav a.active{
+    background-color: #c8a2c8;
+}
+
+nav a:hover{
+    background-color: #c8a2c8;
+}
+
+aside{
+    background-color: lightblue;
+    grid-area: aside;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+section#main{
+    background-color:  #fadadd ;
+    
+    ;
+    padding: 10px;
+}
+section#main h2{
+    text-align: center;
+}
+
+section#main img{
+    grid-area: img;
+}
+
+
+section#main h2{
+    grid-area: title;
+}
+
+section#main p{
+    grid-area: description;
+    text-align: justify;
+}
+
+section#photos{
+    background-color: grey;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+section#photos img{
+    width: 100%;
+}
+
+section#video{
+    background-color: grey;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+section#info{
+    background-color:  lightcyan;
+    
+    ;
+    padding: 10px;
+}
+section#info h1{
+    text-align: center;
+}
+
+section#design{
+    background-color:  lightcyan;
+    
+    ;
+    padding: 10px;
+}
+section#design h1{
+    text-align: center;
+}
+
+section#contacts{
+    background-color: grey;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+}
+#gall {
+  position: relative;
+  padding-top: 50%;
+  -moz-user-select: none; user-select: none;
+}
+#gall img {
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  max-width: 24.5%;
+  max-height: 49.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: zoom-in;
+  transition: .2s;
+}
+#gall img:nth-child(4n-2) {left: 37.5%;}
+#gall img:nth-child(4n-1) {left: 62.5%;}
+#gall img:nth-child(4n) {left: 87.5%;}
+#gall img:nth-child(n+5) {top: 75%;}
+
+#gall img:focus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+}
+#gall img:focus ~ div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  cursor: zoom-out;
+}
+.nesolestag-enadenud {
+  width: 615px;
+  margin: 0 auto;
+}
+
+.kesednsoled:after,
+.kesednsoled:before {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.ico-wrap {
+  color: #a612d4;
+  width: 48px;
+  height: 48px;
+  margin: 30px 18px 5px 5px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid #9d1cb7;
+  float: left;
+  border-radius: 30px;
+}
+.ico-contact {
+  line-height: 1.9 !important;
+}
+.meanous-andscoev {
+  float: left;
+  margin-bottom: 20px;
+}
+.aio-icon-title {
+  font-size: 16px;
+  color: #950c96;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .meanous-andscoev,
+  .ico-wrap {
+  float: none;
+  text-align: center;
+  }
+  .ico-wrap {
+  margin: 0 auto 15px auto;
+  }
+}
+
+
+footer{
+    background-color: #fadadd;
+    grid-area: footer;
+}
+
+footer nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+footer nav a{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ccc;
+}
+
+footer nav a:hover{
+    background-color: indigo;
+}
